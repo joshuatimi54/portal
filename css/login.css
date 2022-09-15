@@ -1,0 +1,74 @@
+/*
+Design and Developed by: UNFOLD
+NOTE: This file contains the styling for responsive Template.
+*/
+
+/*================================================
+[  Table of contents  ]
+================================================
+ 
+> Login-page
+> 404-page
+
+======================================
+[ End table content ]
+======================================*/
+
+/*------------------
+Import css
+------------------*/
+
+@import url('style.css');
+
+/*------------------
+Login-page
+------------------*/
+body{
+	background-color: var(--bg);
+}
+
+.login-info {
+	margin: 16.2% 150px;
+}
+
+.login-info form {
+	margin: 45px 0 0;
+}
+
+#right-bar{
+	background-image: linear-gradient(to top left,var(--crc),var(--grc),var(--grc));
+	height: 770px;
+	margin-bottom: -25px;
+}
+
+
+.login-right-bar h6{
+	margin-top: 50%;
+}
+
+.login-footer-one {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 150px;
+}
+
+.login-footer-two {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.login-footer-three {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.reset-form .login-info {
+	margin: 25.6% 150px;
+}
+
+
+
+

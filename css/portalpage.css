@@ -1,0 +1,110 @@
+:root{
+    --bg: rgb(178, 188, 176);
+    --pbg: rgb(255,255,255);
+    --dbbg: rgb(227, 240, 153);
+}
+
+.none{
+    display: none;
+}
+
+.page{
+    background-color: var(--pbg);
+    border-radius: 10px;
+}
+.dashboard{
+    display: flex;
+    background-color: var(--dbbg);
+    border-radius: 10px;
+    flex-wrap: wrap;
+}
+.stu_logo{
+   padding: 5%;
+}
+.stu_logo img{
+    border-radius: 100%;
+    width: 150px;
+}
+.stu_name{
+    padding: 10px;
+}
+.page_nav{
+    border-bottom: 0.15rem solid;
+    padding: 5px 0px;
+}
+.page_nav ul{
+    display: flex;
+    justify-content: center;
+}
+.page_nav ul li{
+    list-style-type: none;
+    padding: 10px 5px ;
+    cursor: pointer;
+}
+.active{
+    background-color: red;
+}
+
+.row1{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0% 5% 0% 5%;
+    overflow: scroll;
+}
+.lay1{
+    border-radius: 10px;
+    width: 300px;
+    background-color: var(--bg);
+    margin: 15px auto;
+}
+.lay1 ul li{
+    list-style-type: none;
+    padding: 15px;
+    border-bottom: 0.12rem solid;
+    cursor: pointer;
+}
+.lay1 ul li:nth-child(3){
+    border: none;
+}
+.stu_details{
+    flex: 60%;
+    padding: 15px;
+}
+.details{
+    padding: 10px;
+    border-bottom: 0.11rem solid;
+}
+
+.row1{
+    display: flexbox;
+}
+
+
+.take_test{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.take_test button{
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.take_exam{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.take_exam button{
+    margin-bottom: 10px;
+    width: 200px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: var(--dbbg);
+}

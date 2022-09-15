@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="portalpage.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page">
+      <div class="dashboard">
+        <div class="stu_logo">
+          <img src="img/STU AVA.png" alt="Student_image" />
+        </div>
+        <div class="stu_name">
+          <div>
+            <h1><span>Students Name</span></h1>
+          </div>
+          <div>
+            <h3><span>Class</span></h3>
+            <span id="greeting"></span> <br />
+            <span id="date"></span>
+          </div>
+        </div>
+      </div>
+      <div class="page_nav">
+        <ul>
+          <li id="about" class="list about active">
+            About
+          </li>
+          <li id="score" class="list">Score board</li>
+          <li id="test" class="list">Take test</li>
+          <li id="exam" class="list">Take exam</li>
+          <li id="log" class="list">log complain</li>
+        </ul>
+      </div>
+      <div id="row1" class="board">
+        <div class="row1">
+          <div class="lay1">
+            <ul>
+              <li>Edit profile</li>
+              <li>School fee details</li>
+              <li>make payment</li>
+            </ul>
+          </div>
+          <div class="stu_details">
+            <div class="details">
+              <label for="first_name">First Name</label>&ThickSpace;&colon;
+              <span></span>
+            </div>
+            <div class="details">
+              <label for="last_name">Last Name</label>&ThickSpace;&colon;
+              <span></span>
+            </div>
+            <div class="details">
+              <label for="gender"> Gender</label>&ThickSpace;&colon;
+              <span></span>
+            </div>
+            <div class="details">
+              <label for="class">Class</label>&ThickSpace;&colon;
+              <span></span>
+            </div>
+            <div class="details">
+              <label for="phone_number">Phone Number</label>&ThickSpace;&colon;
+              <span></span>
+            </div>
+            <div class="details">
+              <label for="email">Email Address</label>&ThickSpace;&colon;
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="row3" class="board none">
+        <div class="take_test">
+          <a href=""><button>Mathematics</button></a>
+          <a href=""><button>English</button></a>
+          <a href=""><button>Chemistry</button></a>
+          <a href=""><button>Physics</button></a>
+          <a href=""><button>Biology</button></a>
+        </div>
+      </div>
+      <div id="row4" class="board none">
+        <div class="take_exam">
+          <a href=""><button>Mathematics</button></a>
+          <a href=""><button>English</button></a>
+          <a href=""><button>Chemistry</button></a>
+          <a href=""><button>Physics</button></a>
+          <a href=""><button>Biology</button></a>
+        </div>
+      </div>
+    </div>
+    <script src="portalpage.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#test").click(function () {
+          $(".list").removeClass("active");
+          $("#test").addClass("active");
+          $(".board").addClass("none");
+          $("#row3").removeClass("none");
+        });
+        $("#exam").click(function () {
+          $(".list").removeClass("active");
+          $("#exam").addClass("active");
+          $(".board").addClass("none");
+          $("#row4").removeClass("none");
+        });
+        $("#about").click(function () {
+          $(".list").removeClass("active");
+          $("#about").addClass("active");
+          $(".board").addClass("none");
+          $("#row1").removeClass("none");
+        });
+      });
+    </script>
+  </body>
+</html>

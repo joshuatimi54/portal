@@ -1,0 +1,72 @@
+/*
+Template: Markethon - Digital Marketing Agency Responsive HTML5 Template
+Author: iqonicthemes.in
+Design and Developed by: iqonicthemes.in
+NOTE: This file contains the styling for responsive Template.
+*/
+
+/*
+====================
+ (  Media Queries  )
+====================
+*/
+
+@media(max-width:1365px) {
+	.countdown-page .login-info {
+		margin: 153px 26px 160px;
+	}
+
+	.register-form .login-info, .login-from .login-info {
+		margin: 100px 80px 100px;
+	}
+
+}
+
+@media(max-width:1199px) {
+
+	.countdown-page .login-info {
+		margin: 50px 26px 50px;
+	}
+
+	#right-bar {
+		height: 400px;
+	}
+}
+
+@media(max-width:992px) {
+	.register-form .login-info, .login-from .login-info {
+		margin: 60px 15px 60px;
+	}
+}
+
+@media(max-width:767px) {
+	.countdown-page .login-info {
+		margin: 175px 26px 50px;
+	}
+
+	.register-form .login-info, .login-from .login-info {
+		margin: 60px 15px 60px;
+	}
+
+	.login-info {
+		margin: 25% 15px;
+	}
+
+}
+
+@media(max-width:479px) {
+	
+	.countdown-page .login-info .subscribe-form {
+		margin: 0;
+	}
+
+	.countdown-page .login-info {
+		margin: 100px 26px 50px;
+	}
+	.login-info {
+		margin: 25% 15px;
+	}
+	#right-bar {
+		height: 400px;
+	}
+}
